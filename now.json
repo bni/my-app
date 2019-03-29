@@ -2,6 +2,7 @@
   "version": 2,
   "builds": [
 	  { "src": "index.html", "use": "@now/static" },
-	  { "src": "date.js", "use": "@now/node" }
+	  { "src": "date.js", "use": "@now/node" },
+	  { "src": "cow.ts", "use": "@now/node" }
   ]
 }
