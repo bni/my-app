@@ -1,10 +1,11 @@
-import Link from "next/link";
+import Layout from "../components/Layout.js";
 
-export default function About() {
+const About = () => {
   return (
-    <div>
+    <Layout>
       <p>This is the about page</p>
-      <Link href="/"><a>Go home</a></Link>
-    </div>
-  )
+    </Layout>
+  );
 };
+
+export default About;
