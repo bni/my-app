@@ -17,6 +17,13 @@ const Header = () => {
           <a className="button">About</a>
         </Link>
       </header>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm">
+            &nbsp;
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

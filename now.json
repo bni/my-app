@@ -1,12 +1,13 @@
 {
   "version": 2,
   "builds": [
-    { "src": "next.config.js", "use": "@now/next" },
     { "src": "api/headsets.js", "use": "@now/node" },
-    { "src": "assets/*", "use": "@now/static" }
+    { "src": "assets/*", "use": "@now/static" },
+    { "src": "next.config.js", "use": "@now/next" }
   ],
   "routes": [
-    { "src": "/detail/(?<id>[^/]*)", "dest": "/detail?id=$id" },
-    { "src": "/api/headsets/(?<id>[^/]*)", "dest": "/api/headsets.js?id=$id" }
+    { "src": "/api/headsets", "dest": "/api/headsets.js" },
+    { "src": "/api/headsets/(?<id>[^/]*)", "dest": "/api/headsets.js?id=$id" },
+    { "src": "/detail/(?<id>[^/]*)", "dest": "/detail?id=$id" }
   ]
 }
