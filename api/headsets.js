@@ -1,4 +1,4 @@
-const headsets = require("../data/headesets.json");
+const headsets = require("./headesets.json");
 
 const { parse } = require("url");
 

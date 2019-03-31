@@ -3,7 +3,7 @@ import Layout from "../components/Layout.js";
 const About = () => {
   return (
     <Layout>
-      <p>This is the about page</p>
+      <p>This site is showcasing current and upcoming VR headsets</p>
     </Layout>
   );
 };

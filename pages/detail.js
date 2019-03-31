@@ -1,18 +1,18 @@
 import Layout from "../components/Layout.js";
 import fetch from "isomorphic-unfetch";
 
-const Post = (props) => {
-  // noinspection JSUnresolvedVariable,JSDeprecatedSymbols
+const Detail = (props) => {
+  // noinspection JSUnresolvedVariable
   return (
     <Layout>
       <h1>{props.headset.name}</h1>
       <p>{props.headset.summary}</p>
-      <img alt="" src={props.headset.image.medium} />
+      <img alt="" src={props.headset.image.large} />
     </Layout>
   );
 };
 
-Post.getInitialProps = async (context) => {
+Detail.getInitialProps = async (context) => {
   const { id } = context.query;
 
   const res = await fetch(`https://my-app.bni.now.sh/api/headsets/${id}`);
@@ -24,4 +24,4 @@ Post.getInitialProps = async (context) => {
   };
 };
 
-export default Post;
+export default Detail;

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 100,
+    "name": "Oculus Rift",
+    "summary": "Oculus Rift summary here",
+    "image": {
+      "large": "/assets/oculus-rift.jpg"
+    }
+  },
+  {
+    "id": 200,
+    "name": "Oculus Rift S",
+    "summary": "Oculus Rift S summary here",
+    "image": {
+      "large": "/assets/oculus-rift-s.jpg"
+    }
+  },
+  {
+    "id": 300,
+    "name": "Oculus Quest",
+    "summary": "Oculus Quest summary here",
+    "image": {
+      "large": "/assets/oculus-quest.jpg"
+    }
+  }
+]

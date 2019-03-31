@@ -10,7 +10,7 @@ const Index = (props) => {
         {props.headsets.map((headset) => (
           <div className="row" key={headset.id}>
             <div className="col-sm">
-              <Link as={`/p/${headset.id}`} href={`/post?id=${headset.id}`}>
+              <Link as={`/detail/${headset.id}`} href={`/detail?id=${headset.id}`}>
                 <a>{headset.name}</a>
               </Link>
             </div>
