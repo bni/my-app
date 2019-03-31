@@ -1,18 +1,22 @@
+import Head from "next/head";
 import Link from "next/link";
-
-const linkStyle = {
-  marginRight: 15
-};
 
 const Header = () => {
   return (
     <div>
-      <Link href="/">
-        <a style={linkStyle}>Home</a>
-      </Link>
-      <Link href="/about">
-        <a style={linkStyle}>About</a>
-      </Link>
+      <Head>
+        <title>VR Headsets</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css" />
+      </Head>
+      <header>
+        <Link href="/">
+          <a className="button">Home</a>
+        </Link>
+        <Link href="/about">
+          <a className="button">About</a>
+        </Link>
+      </header>
     </div>
   );
 };
