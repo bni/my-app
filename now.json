@@ -7,7 +7,6 @@
   ],
   "routes": [
     { "src": "/detail/(?<id>[^/]*)", "dest": "/detail?id=$id" },
-    { "src": "/api/headsets", "dest": "/api/headsets.js" },
     { "src": "/api/headsets/(?<id>[^/]*)", "dest": "/api/headsets.js?id=$id" }
   ]
 }

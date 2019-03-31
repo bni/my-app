@@ -9,6 +9,22 @@
   },
   {
     "id": 200,
+    "name": "HTC Vive",
+    "summary": "HTC Vive summary here",
+    "image": {
+      "large": "/assets/htc-vive.jpg"
+    }
+  },
+  {
+    "id": 300,
+    "name": "HTC Vive Pro",
+    "summary": "HTC Vive Pro summary here",
+    "image": {
+      "large": "/assets/htc-vive-pro.jpg"
+    }
+  },
+  {
+    "id": 400,
     "name": "Oculus Rift S",
     "summary": "Oculus Rift S summary here",
     "image": {
@@ -16,11 +32,19 @@
     }
   },
   {
-    "id": 300,
+    "id": 500,
     "name": "Oculus Quest",
     "summary": "Oculus Quest summary here",
     "image": {
       "large": "/assets/oculus-quest.jpg"
+    }
+  },
+  {
+    "id": 600,
+    "name": "Valve Index",
+    "summary": "Valve Index summary here",
+    "image": {
+      "large": "/assets/valve-index.jpg"
     }
   }
 ]
