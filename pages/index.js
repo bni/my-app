@@ -5,19 +5,43 @@ import fetch from "isomorphic-unfetch";
 const Index = (props) => {
   return (
     <Layout>
-      <div className="container">
 
-        {props.headsets.map((headset) => (
-          <div className="row" key={headset.id}>
-            <div className="col-sm">
-              <Link as={`/detail/${headset.id}`} href={`/detail?id=${headset.id}`}>
+      <style jsx>{`
+        img {
+          object-fit: cover;
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+        }
+        .card {
+          text-align:center; padding: 1rem;
+        }
+        span {
+          display: block;
+          cursor: pointer;
+        }
+      `}</style>
+
+      <figure className="container">
+        <div className="row">
+
+          {props.headsets.map((headset) => (
+            <Link as={`/detail/${headset.id}`} href={`/detail?id=${headset.id}`} key={headset.id}>
+
+              <span className="card">
+                <div>
+                  <img alt="" src={headset.image.large}/>
+                </div>
+                <br/>
                 <a>{headset.name}</a>
-              </Link>
-            </div>
-          </div>
-        ))}
+              </span>
 
-      </div>
+            </Link>
+          ))}
+
+        </div>
+
+      </figure>
     </Layout>
   );
 };

@@ -6,8 +6,19 @@
     { "src": "next.config.js", "use": "@now/next" }
   ],
   "routes": [
-    { "src": "/api/headsets", "dest": "/api/headsets.js" },
-    { "src": "/api/headsets/(?<id>[^/]*)", "dest": "/api/headsets.js?id=$id" },
-    { "src": "/detail/(?<id>[^/]*)", "dest": "/detail?id=$id" }
+    {
+      "src": "/api/headsets",
+      "dest": "/api/headsets.js",
+      "headers": {"Access-Control-Allow-Origin": "*"}
+    },
+    {
+      "src": "/api/headsets/(?<id>[^/]*)",
+      "dest": "/api/headsets.js?id=$id",
+      "headers": {"Access-Control-Allow-Origin": "*"}
+    },
+    {
+      "src": "/detail/(?<id>[^/]*)",
+      "dest": "/detail?id=$id"
+    }
   ]
 }

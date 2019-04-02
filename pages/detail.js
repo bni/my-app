@@ -6,7 +6,7 @@ const Detail = (props) => {
   return (
     <Layout>
       <h1>{props.headset.name}</h1>
-      <p>{props.headset.summary}</p>
+      <p>{props.headset.vendor}</p>
       <img alt="" src={props.headset.image.large} />
     </Layout>
   );
